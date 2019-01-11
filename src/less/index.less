@@ -1,0 +1,15 @@
+@color:red;
+.box(@width, @height, @colors) {
+  width: @width;
+  height: @height;
+  background: @colors;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: @color;
+    height: 100vh;
+    div {
+      .box(200px , 400px, #000)
+    }
+}
